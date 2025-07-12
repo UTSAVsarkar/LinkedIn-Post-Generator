@@ -19,16 +19,17 @@ def generate_linkedin_post(prompt_text):
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "HTTP-Referer": "http://localhost",  # Use your domain if deploying (e.g. "https://utsav.streamlit.app")
+        "X-Title": "LinkedIn Post Generator",
         "Content-Type": "application/json"
     }
 
     data = {
         "model": "tngtech/deepseek-r1t2-chimera:free",
         "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt_text}
+            {"role": "user", "content": system_prompt}
         ],
-        "temperature": 0.8
+        "temperature": 0.7
     }
 
     res = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=data)
