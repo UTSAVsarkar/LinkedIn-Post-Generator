@@ -33,7 +33,7 @@ with step_cols[2]:
 # --- Tech Stack ---
 st.markdown("### 🧠 Tech Stack")
 
-st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ0a3ZpMGY2b2czczN0N3BpZzhrczJ3cmFwNG4xa2J0ZmJjbHVrbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SWoSkN6DxTszqIKEqv/giphy.gif", caption="Example: Writing a LinkedIn post in seconds", use_column_width=True)
+st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWQ0a3ZpMGY2b2czczN0N3BpZzhrczJ3cmFwNG4xa2J0ZmJjbHVrbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/SWoSkN6DxTszqIKEqv/giphy.gif", caption="Example: Writing a LinkedIn post in seconds", use_container_width=True)
 
 st.markdown("""
 - **LLM**: [DeepSeek R1T2 Chimera](https://openrouter.ai/models/tngtech/deepseek-r1t2-chimera:free) via [OpenRouter](https://openrouter.ai)  
